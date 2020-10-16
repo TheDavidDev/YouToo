@@ -12,7 +12,7 @@ export default () => {
     const { data: { items: videos } } = await youtube.get("search", {
       params: {
         part: "snippet",
-        maxResults: 5,
+        maxResults: 10,
         key: 'AIzaSyDSN_f1t7LtaxAaKCrkN5pYDdr3E4F0hcU',
         q: searchTerm,
       }
